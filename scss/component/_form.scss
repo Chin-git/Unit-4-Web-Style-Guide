@@ -60,7 +60,7 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
+@media (min-width: $med) {
 
 .container {
   max-width: 1400px;
