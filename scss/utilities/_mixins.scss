@@ -5,6 +5,10 @@
         .#{$button} {
             background-color: $colors;
         }
+        
+        .#{$button}:hover {
+            background-color: lighten($colors, 10%);
+        }
     }
 }
 
@@ -30,10 +34,10 @@
     $direction: null,
     $justify: null,
     $items: null) {
-    display: ;
-    flex-basis: ;
-    flex-direction: ;
-    justify-content: ;
-    align-items: ;
+    display: $disp;
+    flex-basis: $basis;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $items;
     @content;
 }

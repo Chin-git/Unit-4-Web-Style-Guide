@@ -70,7 +70,7 @@
     }
 
     [class^=col] {
-        @include flexy($disp, $justify: center, $items: center);
+        @include flexy($disp: flex, $justify: center, $items: center);
         margin-top: 0;
 
         & + [class^=col] {

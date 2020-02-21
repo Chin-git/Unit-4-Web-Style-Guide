@@ -10,8 +10,7 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include flexy($disp: flex, $direction: column);
   padding: 1em 10px;
 }
 
