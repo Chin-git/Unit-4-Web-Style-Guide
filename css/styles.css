@@ -67,7 +67,6 @@
   max-width: 100%;
   max-height: 100%;
 }
-
 .img-frame {
   display: block;
   margin-left: auto;
@@ -77,8 +76,7 @@
   padding: 13px;
   border: 1px solid #ccc;
 }
-
-.img-logo {
+.img-frame-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -89,16 +87,16 @@
 /* ============================================= */
 @media (min-width: 768px) {
   .container {
-    max-width: 1400px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    max-width: 1400px;
   }
 
   .centered {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
 
   .row {
@@ -111,57 +109,56 @@
     margin-top: 0;
     align-items: center;
   }
-
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
 
   .col-1 {
-    flex-basis: 8.33%;
+    flex-basis: 8.3333333333;
   }
 
   .col-2 {
-    flex-basis: 16.67%;
+    flex-basis: 16.6666666667;
   }
 
   .col-3 {
-    flex-basis: 25%;
+    flex-basis: 25;
   }
 
   .col-4 {
-    flex-basis: 33.33%;
+    flex-basis: 33.3333333333;
   }
 
   .col-5 {
-    flex-basis: 41.67%;
+    flex-basis: 41.6666666667;
   }
 
   .col-6 {
-    flex-basis: 50%;
+    flex-basis: 50;
   }
 
   .col-7 {
-    flex-basis: 58.33%;
+    flex-basis: 58.3333333333;
   }
 
   .col-8 {
-    flex-basis: 66.67%;
+    flex-basis: 66.6666666667;
   }
 
   .col-9 {
-    flex-basis: 75%;
+    flex-basis: 75;
   }
 
   .col-10 {
-    flex-basis: 83.33%;
+    flex-basis: 83.3333333333;
   }
 
   .col-11 {
-    flex-basis: 91.67%;
+    flex-basis: 91.6666666667;
   }
 
   .col-12 {
-    flex-basis: 100%;
+    flex-basis: 100;
   }
 
   .nav {
@@ -169,12 +166,10 @@
     justify-content: flex-end;
     align-items: center;
   }
-
   .nav-link {
     flex-basis: 100px;
   }
-
-  .btn {
+  .nav .btn {
     padding: 10px 30px;
   }
 
@@ -269,7 +264,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -278,8 +272,7 @@
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
-.nav-link:hover {
+.nav-link-link:hover {
   color: #fff;
   background-color: #58e1c1;
 }

@@ -14,23 +14,4 @@
   border-radius: 5px;
 }
 
-.default {
-  background-color: $link-color;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: #63cc82;
-}
-
-.warning {
-  background-color: #fd7856;
-}
-
+@include btn-color($buttons); 

@@ -1,0 +1,39 @@
+@mixin btn-color($map) {
+
+    @each $button,
+    $colors in $buttons {
+        .#{$button} {
+            background-color: $colors;
+        }
+    }
+}
+
+@mixin img() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    @content;
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @content;
+}
+
+@mixin flexy(
+    $disp: flex,
+    $basis: null,
+    $direction: null,
+    $justify: null,
+    $items: null) {
+    display: ;
+    flex-basis: ;
+    flex-direction: ;
+    justify-content: ;
+    align-items: ;
+    @content;
+}
