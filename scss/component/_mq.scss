@@ -2,7 +2,6 @@
 /*              Media Queries                    */
 /* ============================================= */
 @include mq($med) {
-
     .container {
         @include center;
         max-width: 1400px;
@@ -16,14 +15,13 @@
         flex-direction: row;
     }
 
-    [class^=col] {
+    [class^="col"] {
         @include flexy($disp: flex, $justify: center, $items: center);
         margin-top: 0;
 
-        & + [class^=col] {
+        & + [class^="col"] {
             margin-left: 10px;
         }
-
     }
 
     @for $i from 1 through 12 {
