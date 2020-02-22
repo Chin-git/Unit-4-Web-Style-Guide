@@ -28,7 +28,7 @@
 
     @for $i from 1 through 12 {
         .col-#{$i} {
-            flex-basis: ($i/12) * 100;
+            flex-basis: $i * 8.33%;
         }
     }
 
