@@ -1,34 +1,33 @@
-
-
-
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
 
 .container {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 .row {
-  @include flexy($direction: column);
-  padding: 1em 10px;
+    @include flexy($direction: column);
+    padding: 1em 10px;
 }
 
 [class^=col] {
-  margin-top: 10px;
-  flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+$theme-col: (#927BC1, #fd7856, #deb2ee, #7ee6fd, #88d9a0,
+    #4da2bb, #ec9fa3, #fd9f85, #e4757a, #63cc82, #51ddfc, #80e8d1);
 
 @for $i from 1 through 12 {
     .theme.col-#{$i} {
-        background-color: adjust-hue(#927bc1, $i * 1000);
+        background-color: nth($theme-col, $i);
     }
 }
 
 .card {
-  flex-basis: 100%;
+    flex-basis: 100%;
 }
-
