@@ -4,10 +4,11 @@
     $colors in $buttons {
         .#{$button} {
             background-color: $colors;
+            transition: background-color .4s ease-in;
         }
         
         .#{$button}:hover {
-            background-color: lighten($colors, 10%);
+            background-color: lighten($colors, 15%);
         }
     }
 }
@@ -40,4 +41,10 @@
     justify-content: $justify;
     align-items: $items;
     @content;
+}
+
+@mixin mq($break) {
+    @media (min-width: $break) {
+        @content;
+    }
 }

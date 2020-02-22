@@ -13,42 +13,47 @@
 
 .default {
   background-color: #51ddfc;
+  transition: background-color 0.4s ease-in;
 }
 
 .default:hover {
-  background-color: #83e7fd;
+  background-color: #9cecfd;
 }
 
 .error {
   background-color: #e4757a;
+  transition: background-color 0.4s ease-in;
 }
 
 .error:hover {
-  background-color: #eca0a3;
+  background-color: #f1b5b8;
 }
 
 .info {
   background-color: #927bc1;
+  transition: background-color 0.4s ease-in;
 }
 
 .info:hover {
-  background-color: #af9ed1;
+  background-color: #bdafd9;
 }
 
 .success {
   background-color: #63cc82;
+  transition: background-color 0.4s ease-in;
 }
 
 .success:hover {
-  background-color: #89d9a1;
+  background-color: #9ddfb0;
 }
 
 .warning {
   background-color: #fd7856;
+  transition: background-color 0.4s ease-in;
 }
 
 .warning:hover {
-  background-color: #fea088;
+  background-color: #feb4a2;
 }
 
 /* ============================================= */
@@ -74,6 +79,101 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme.col-1 {
+  background-color: #7bc1c1;
+}
+
+.theme.col-2 {
+  background-color: #93c17b;
+}
+
+.theme.col-3 {
+  background-color: #c1927b;
+}
+
+.theme.col-4 {
+  background-color: #c17bc1;
+}
+
+.theme.col-5 {
+  background-color: #7b93c1;
+}
+
+.theme.col-6 {
+  background-color: #7bc192;
+}
+
+.theme.col-7 {
+  background-color: #c1c17b;
+}
+
+.theme.col-8 {
+  background-color: #c17b93;
+}
+
+.theme.col-9 {
+  background-color: #927bc1;
+}
+
+.theme.col-10 {
+  background-color: #7bc1c1;
+}
+
+.theme.col-11 {
+  background-color: #93c17b;
+}
+
+.theme.col-12 {
+  background-color: #c1927b;
+}
+
+.card {
+  flex-basis: 100%;
+}
+
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+.nav {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  padding-left: 0;
+}
+.nav-link {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.nav-link:hover {
+  color: #fff;
+  background-color: #58e1c1;
 }
 
 /* ============================================= */
@@ -203,101 +303,6 @@
     margin-right: initial;
   }
 }
-/* ============================================= */
-/*              Grid System                      */
-/* ============================================= */
-.container {
-  padding: 0 10px;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 10px;
-}
-
-[class^=col] {
-  margin-top: 10px;
-  flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.theme.col-1 {
-  background-color: #927bc1;
-}
-
-.theme.col-2 {
-  background-color: #fd7856;
-}
-
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-.theme.col-9 {
-  background-color: #e4757a;
-}
-
-.theme.col-10 {
-  background-color: #63cc82;
-}
-
-.theme.col-11 {
-  background-color: #51ddfc;
-}
-
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-.card {
-  flex-basis: 100%;
-}
-
-/* ============================================= */
-/*              Navigation                       */
-/* ============================================= */
-.nav {
-  padding-left: 0;
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.nav-link {
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 0;
-  display: block;
-  width: 100%;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
-}
-
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
